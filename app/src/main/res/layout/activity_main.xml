@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <TextView
+        android:text="@string/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:id="@+id/textView"
+         />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/nomeEditText"
+        android:singleLine="true">
+
+        <requestFocus />
+    </EditText>
+    <Button
+        android:id="@+id/saudacaoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomeEditText"
+        android:text="@string/surpreenda_me"
+        android:layout_gravity="center"
+        android:onClick="surpreenderUsuario"/>
+
+
+    <EditText
+        android:id="@+id/linkEditText"
+        android:inputType="textUri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linkButton"
+        android:text="Siga o link acima"
+        android:onClick="followLink"/>
+
+    </LinearLayout>
